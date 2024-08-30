@@ -1,0 +1,56 @@
+#root {
+  margin: 0 auto;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.product:hover {
+  box-shadow: 0px 4px 8px rgba(60, 208, 1, 0.5);;
+  border: solid 1px rgba(60, 208, 1, 0.5);
+  border-radius: 12px;
+}
+.product .btn {
+  transition: transform 0.3s , opacity 0.3s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.product {
+  transition: all 0.2s ease-in-out;
+}
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
